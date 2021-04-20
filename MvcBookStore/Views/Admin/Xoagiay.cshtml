@@ -1,0 +1,89 @@
+﻿@model MvcBookStore.Models.GIAY
+
+@{
+    ViewBag.Title = "Xoagiay";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>XÁC NHẬN THÔNG TIN GIÀY CẦN XÓA</h2>
+
+<h3>Bạn có quyết định xóa không ? </h3>
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            TÊN GIÀY:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenGiay)
+        </dd>
+
+        <dt>
+            GIÁ BÁN:
+        </dt>
+
+        <dd>
+            @String.Format("{0:0,0}", Model.Giaban) VNĐ
+        </dd>
+
+        <dt>
+            MÔ TẢ:
+        </dt>
+
+        <dd style="width:600px; text-align:justify">
+            @Html.DisplayFor(model => model.Mota)
+        </dd>
+
+        <dt>
+            ẢNH BÌA
+        </dt>
+
+        <dd>
+            <img src="@Url.Content("~/Hinhsanpham/"+  Model.Anhbia)" width="120px" />
+        </dd>
+
+        <dt>
+            NGÀY CẬP NHẬT:
+        </dt>
+
+        <dd>
+            @String.Format("{0:dd/MM/yyyy}", Model.Ngaycapnhat) VNĐ
+        </dd>
+
+        <dt>
+            SỐ LƯỢNG TỒN:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soluongton)
+        </dd>
+
+        <dt>
+            LOẠI GIÀY:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaLoai)
+        </dd>
+
+        <dt>
+            NHÀ SẢN XUẤT:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaNSX)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("QUAY LẠI", "giay")
+        </div>
+    }
+</div>

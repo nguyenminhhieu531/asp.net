@@ -1,0 +1,40 @@
+﻿
+
+@model IEnumerable<MvcBookStore.Models.GIAY>
+@{
+    ViewBag.Title = "SPTheoNSX";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row">
+
+</div>
+<h3 style="Text-align:Center; color:red">GIÀY </h3>
+@foreach (var giay in Model)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <a href="@Url.Action("Details", "Admin", new { id = giay.MaGiay })">
+                <img alt="@giay.TenGiay" src="~/Hinhsanpham/@giay.Anhbia" width="200" />
+            </a>
+            <div>
+                <br />
+                <h4 style="text-align:center">
+                    @giay.TenGiay
+                </h4>
+                <p></p>
+            </div>
+            <div class="ratings">
+                <p class="pull-right">15 reviews</p>
+                <p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+}

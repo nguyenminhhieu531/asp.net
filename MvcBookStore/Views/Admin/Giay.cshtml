@@ -1,0 +1,74 @@
+﻿@using MvcBookStore.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<MvcBookStore.Models.GIAY>
+@{
+    ViewBag.Title = "Giay";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<h2>QUẢN LÝ THÔNG TIN GIÀY</h2>
+
+
+<p>
+    @Html.ActionLink("Create New", "ThemmoiGiay")
+</p>
+<table class="table" border="1">
+
+    <tr>
+        <th style="width:180px">Tên giày</th>
+        <th style="width:100px">Giá bán</th>
+        <th style="width:200px">Mô tả</th>
+        <th style="width:120px">Ảnh bìa</th>
+        <th style="width:150px">Ngày cập nhật</th>
+        <th style="width:120px">SL tồn</th>
+        <th style="width:120px">Loại giày</th>
+        <th style="width:120px">Nhà sản xuất</th>
+        <th style="width:250px"></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenGiay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Giaban)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mota)
+            </td>
+            <td>
+                <img src="@Url.Content("~/Hinhsanpham/"+ item.Anhbia)" width="200" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ngaycapnhat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soluongton)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNSX)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaLoai)
+            </td>
+            <td>
+                @Html.ActionLink("SỬA", "Suagiay", new { id = item.MaGiay }) |
+                @Html.ActionLink("CHI TIẾT", "Details", new { id = item.MaGiay }) |
+                @Html.ActionLink("XÓA", "Xoagiay", new { id = item.MaGiay })
+            </td>
+        </tr>
+    }
+
+</table>
+@* Tao liên kết các trang  *@
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+<div class="MenuTrang">
+
+    @Html.PagedListPager(Model, page => Url.Action("Giay", new { page = page }))
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+    }
+</style>

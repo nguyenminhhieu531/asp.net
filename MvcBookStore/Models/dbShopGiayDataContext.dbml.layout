@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.75, 10.625" name="dbShopGiayDataContext">
+  <DataContextMoniker Name="/dbShopGiayDataContextDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ad1f3272-8efc-4118-b74c-22ce75dab4ac" absoluteBounds="8.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/dbShopGiayDataContextDataContext/ADMIN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87d8f702-5470-4c7e-889e-d41f0baf6852" absoluteBounds="8.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="601d8d3a-e60e-41ef-b08b-b14b9c1204ef" absoluteBounds="0.75, 8.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbShopGiayDataContextDataContext/CHITIETDONTHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c2949dc-55d3-47cf-9a77-64e07811a39a" absoluteBounds="0.765, 9.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d58866f-8b4d-499e-8d89-eeff64d24283" absoluteBounds="9.5, 5.125, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/dbShopGiayDataContextDataContext/DONDATHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="282014d7-1919-42d4-9d2c-9b1ba95362a8" absoluteBounds="9.515, 5.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="72f27598-daeb-48b2-b1ee-4b214bc611dc" absoluteBounds="3.5, 1, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/dbShopGiayDataContextDataContext/GIAY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4fe7f48-0535-49dd-b2fc-f625e7965f7a" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c8d28cb2-95c1-4401-b77e-f765a63bb263" absoluteBounds="6.75, 5, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/dbShopGiayDataContextDataContext/KHACHHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fb7576e9-9ff6-4693-80df-35aaef553e42" absoluteBounds="6.765, 5.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5c8411de-6ea5-4b57-b45f-2b6e6a82c1fd" absoluteBounds="0.75, 1.625, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/dbShopGiayDataContextDataContext/LOAIGIAY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7189618-b5d2-41b4-a676-dec5618238ba" absoluteBounds="0.765, 2.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="afb442ba-ad45-4e47-819a-1bd623606414" absoluteBounds="3.75, 8.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbShopGiayDataContextDataContext/NHASANXUAT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87e7c206-fda6-42bf-816c-a20d4edff41e" absoluteBounds="3.765, 9.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cd58c58d-44ba-47dc-b667-ec798c780aa1" absoluteBounds="3.5, 5.375, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/dbShopGiayDataContextDataContext/TACGIA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3317b2c6-34f6-4b3b-b1f1-d9df36e4a9f9" absoluteBounds="3.515, 5.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d3d5b0c-759d-485c-96b8-e369e49ccb1f" absoluteBounds="6.25, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbShopGiayDataContextDataContext/VIETSACH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6434a4ef-901b-437a-a8c7-71b158cee11a" absoluteBounds="6.265, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.75 : 6.10659912109375); (9.5 : 6.10659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbShopGiayDataContextDataContext/KHACHHANG/KHACHHANG_DONDATHANG" />
+      <nodes>
+        <classShapeMoniker Id="c8d28cb2-95c1-4401-b77e-f765a63bb263" />
+        <classShapeMoniker Id="6d58866f-8b4d-499e-8d89-eeff64d24283" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.22199625651042); (3.5 : 2.22199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbShopGiayDataContextDataContext/LOAIGIAY/LOAIGIAY_GIAY" />
+      <nodes>
+        <classShapeMoniker Id="5c8411de-6ea5-4b57-b45f-2b6e6a82c1fd" />
+        <classShapeMoniker Id="72f27598-daeb-48b2-b1ee-4b214bc611dc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.16429768880208); (6.25 : 2.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbShopGiayDataContextDataContext/GIAY/GIAY_VIETSACH" />
+      <nodes>
+        <classShapeMoniker Id="72f27598-daeb-48b2-b1ee-4b214bc611dc" />
+        <classShapeMoniker Id="6d3d5b0c-759d-485c-96b8-e369e49ccb1f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.375); (5.875 : 5); (5.875 : 2.59019853320312); (6.25 : 2.59019853320312)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbShopGiayDataContextDataContext/TACGIA/TACGIA_VIETSACH" />
+      <nodes>
+        <classShapeMoniker Id="cd58c58d-44ba-47dc-b667-ec798c780aa1" />
+        <classShapeMoniker Id="6d3d5b0c-759d-485c-96b8-e369e49ccb1f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

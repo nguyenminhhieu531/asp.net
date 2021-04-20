@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Xacnhandonhang";
+    Layout = "~/Views/Shared/_LayoutGiohang.cshtml";
+}
+
+<script>
+function scrollWin() {
+    window.scrollTo(0, 800);
+}
+</script>
+<body onload="scrollWin()">
+    <div>
+        <h2 style="Text-align:Center">XÁC NHẬN ĐƠN HÀNG</h2>
+        <p style="padding-top:20px; margin-bottom:20px; border-bottom: 2px solid black ;width:96%;margin-left:2% "></p>
+        <img width="10%" src="~/images2/icons8-christmas-gift-50.png" />
+        <div style="text-align:center;background-color:aquamarine;width:100%">
+            <h4>Cám ơn bạn đã mua hàng tại của hàng chúng tôi </h4>
+
+            <h5>Đơn hàng của quý khách đã được chúng tôi ghi nhận. <p>Quý khách có thể chọn hình thức thanh toán bên dưới</p></h5>
+        </div>
+        <br />
+        <p style="text-align:center;color:#0026ff">
+            @Html.ActionLink("Thanh toán qua PayPal", "PaymentWithPaypal", "Paypal") |
+            @Html.ActionLink("Thanh toán qua CreditCard", "PaymentWithCreditCard", "Paypal")
+        </p>
+        <hr />
+    </div>
+</body>

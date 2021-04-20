@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="~/Content/shop-homepage.css" rel="stylesheet">
+    <link href="~/Content/shop-homepage.css" rel="stylesheet">
+    <link href="//bizweb.dktcdn.net/100/393/652/themes/773156/assets/base.scss.css?1592482156408" rel="stylesheet" type="text/css">
+    <link href="//bizweb.dktcdn.net/100/393/652/themes/773156/assets/style.scss.css?1592482156408" rel="stylesheet" type="text/css">
+    <link href="//bizweb.dktcdn.net/100/393/652/themes/773156/assets/module.scss.css?1592482156408" rel="stylesheet" type="text/css">
+    @*<link href="//bizweb.dktcdn.net/100/393/652/themes/773156/assets/responsive.scss.css?1592482156408" rel="stylesheet" type="text/css">*@
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="~/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script>tinymce.init({ selector: 'textarea' });</script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="main-nav">
+                <div class="container nav-head">
+                    <div class="row">
+                        <div class="col-lg-11 col-md-11">
+                            <nav class="hidden-sm hidden-xs nav-main">
+                                <div class="menu_hed head_1">
+                                    <ul class="nav nav_1">
+                                        <li class=" nav-item nav-items ">
+                                            <a class="nav-link" href="/Admin/Giay">
+                                                Trang chủ
+                                                <span class="label_">
+                                                    <i class="label "></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="menu_hover nav-item nav-items ">
+                                            <a class="nav-link ">
+                                                Sản phẩm <i class="fa fa-caret-down" data-toggle="dropdown"></i>
+                                                <span class="label_">
+                                                    <i class="label "></i>
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu border-box">
+                                                <li class="nav-item-lv2">
+                                                    <a class="nav-link" href="/Admin/SPTheoLoaiGiay/1">Giày nam</a>
+                                                </li>
+                                                <li class="nav-item-lv2">
+                                                    <a class="nav-link" href="/Admin/SPTheoLoaiGiay/2">Giày nữ</a>
+                                                </li>
+
+                                            </ul>
+                                        <li class=" nav-item nav-items ">
+                                            <a class="nav-link" href="/Admin/DS_ThuongHieu">
+                                                Thương hiệu
+                                                <span class="label_">
+                                                    <i class="label "></i>
+                                                </span>
+                                            </a>
+
+                                        </li>  
+                                        <li class=" nav-item nav-items ">
+                                            <a class="nav-link" href="/ShopGiay">
+                                                Người dùng
+                                                <span class="label_">
+                                                    <i class="label "></i>
+                                                </span>
+                                            </a>
+
+                                        </li>                                       
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</nav>
+        <!-- Page Content -->
+        <div class="container">
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+        <!-- /.container -->
+
+        <div class="container">
+
+            <hr>
+
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; YVT - 2020</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <!-- /.container -->
+        <!-- jQuery -->
+        <script src="~/Scripts/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="~/Scripts/bootstrap.min.js"></script>
+
+
+</body>
+</html>
+

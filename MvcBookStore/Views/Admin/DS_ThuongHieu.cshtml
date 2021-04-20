@@ -1,0 +1,28 @@
+﻿@model IEnumerable<MvcBookStore.Models.NHASANXUAT>
+
+@{
+    ViewBag.Title = "DS_ThuongHieu";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div><h2>Thương hiệu</h2></div>
+
+<table class="table" border="1">
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenNSX)
+            </td>
+
+            @*<td>
+                    <img src="@Url.Content("~/Hinhsanpham/"+ item.Anhbia)" width="200" />
+                </td>*@
+            <td>
+                @Html.ActionLink("Sản phẩm", "SPTheoNSX", new { id = item.MaNSX })
+            </td>
+        </tr>
+    }
+
+</table>
+
